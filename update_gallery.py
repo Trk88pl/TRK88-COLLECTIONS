@@ -1,23 +1,22 @@
- import os
+import os
 
-# Supported file extensions
 EXTENSIONS = ('.png', '.jpg', '.jpeg', '.gif', '.webp')
 README_FILE = 'README.md'
 START_MARKER = ''
 END_MARKER = ''
 
 def generate_gallery():
-    # List files in the root directory
+    # Pobierz pliki, ignoruj skrypty i pliki systemowe
     files = [f for f in os.listdir('.') if f.lower().endswith(EXTENSIONS)]
-    files.sort() # Sort alphabetically
+    files.sort()
     
     gallery_content = "\n"
     
+    # Pobieranie nazwy repozytorium z environment bota lub ręcznie
+    repo = os.getenv('GITHUB_REPOSITORY', 'Trk88pl/TRK88-COLLECTIONS')
+    
     for f in files:
-        repo_name = os.getenv('GITHUB_REPOSITORY')
-        # Direct link to the image
-        raw_url = f"https://raw.githubusercontent.com/{repo_name}/main/{f}"
-        
+        raw_url = f"https://raw.githubusercontent.com/{repo}/main/{f}"
         gallery_content += f"### File: {f}\n"
         gallery_content += f"![{f}]({f})\n\n"
         gallery_content += f"**Direct Link:**\n`{raw_url}`\n\n"
@@ -36,4 +35,7 @@ if os.path.exists(README_FILE):
         
         with open(README_FILE, 'w', encoding='utf-8') as f:
             f.write(new_content)
-
+    else:
+        print("Błąd: Nie znaleziono znaczników w README.md")
+else:
+    print("Błąd: Nie znaleziono pliku README.md")
