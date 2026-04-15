@@ -1,4 +1,5 @@
 
+
 ### File: action-animated.gif
 ![action-animated.gif](action-animated.gif)
 
@@ -185,9 +186,9 @@
 
 Just a backup of generated/created images for Nuvio collections by me - **TRK88PL**. 
 
-*Like this images? You can buy me a small coffee 
-[buycoffee.to/trk88pl](https://buycoffee.to/trk88pl "on buycoffee.to/trk88pl")*
+*Like this images? You can buy me a small virtual coffee here: 
+[buycoffee.to/trk88pl](https://buycoffee.to/trk88pl "buycoffee.to/trk88pl") thx!*
 
-Animated versions by **MR.YUK** - thx! 
+Some gifs versions by **MR.YUK** - thx! 
 
 
