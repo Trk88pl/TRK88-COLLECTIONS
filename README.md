@@ -240,7 +240,9 @@ Just a backup of generated/created images for Nuvio collections by me - **TRK88P
 ---
 Supported by:
 Animated gifs (action, sci-fi) by **MR.YUK**
+
 Generated images (kids movies, kids shows) by **Jax Teller**
+
 Thank You guys! 
 
 
